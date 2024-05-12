@@ -28,61 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            n1 = new Button();
             textBox1 = new TextBox();
-            button2 = new Button();
-            button3 = new Button();
+            n2 = new Button();
+            n3 = new Button();
             SuspendLayout();
             // 
-            // button1
+            // n1
             // 
-            button1.Font = new Font("Segoe UI", 12F);
-            button1.Location = new Point(340, 74);
-            button1.Name = "button1";
-            button1.Size = new Size(54, 51);
-            button1.TabIndex = 0;
-            button1.Text = "+";
-            button1.UseVisualStyleBackColor = true;
+            n1.Font = new Font("Segoe UI", 12F);
+            n1.Location = new Point(298, 56);
+            n1.Margin = new Padding(3, 2, 3, 2);
+            n1.Name = "n1";
+            n1.Size = new Size(47, 38);
+            n1.TabIndex = 0;
+            n1.Text = "+";
+            n1.UseVisualStyleBackColor = true;
+            n1.Click += n1_Click;
             // 
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(158, 110);
+            textBox1.Location = new Point(138, 82);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 47);
+            textBox1.Size = new Size(110, 39);
             textBox1.TabIndex = 1;
             textBox1.Text = "1";
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
-            // button2
+            // n2
             // 
-            button2.Font = new Font("Segoe UI", 12F);
-            button2.Location = new Point(340, 146);
-            button2.Name = "button2";
-            button2.Size = new Size(54, 51);
-            button2.TabIndex = 2;
-            button2.Text = "-";
-            button2.UseVisualStyleBackColor = true;
+            n2.Font = new Font("Segoe UI", 12F);
+            n2.Location = new Point(298, 110);
+            n2.Margin = new Padding(3, 2, 3, 2);
+            n2.Name = "n2";
+            n2.Size = new Size(47, 38);
+            n2.TabIndex = 2;
+            n2.Text = "-";
+            n2.UseVisualStyleBackColor = true;
+            n2.Click += n2_Click;
             // 
-            // button3
+            // n3
             // 
-            button3.Font = new Font("Segoe UI", 12F);
-            button3.Location = new Point(158, 197);
-            button3.Name = "button3";
-            button3.Size = new Size(125, 40);
-            button3.TabIndex = 3;
-            button3.Text = "Set to 0";
-            button3.UseVisualStyleBackColor = true;
+            n3.Font = new Font("Segoe UI", 12F);
+            n3.Location = new Point(138, 148);
+            n3.Margin = new Padding(3, 2, 3, 2);
+            n3.Name = "n3";
+            n3.Size = new Size(109, 30);
+            n3.TabIndex = 3;
+            n3.Text = "Set to 0";
+            n3.UseVisualStyleBackColor = true;
+            n3.Click += n3_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(462, 325);
-            Controls.Add(button3);
-            Controls.Add(button2);
+            ClientSize = new Size(404, 244);
+            Controls.Add(n3);
+            Controls.Add(n2);
             Controls.Add(textBox1);
-            Controls.Add(button1);
+            Controls.Add(n1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -91,9 +99,9 @@
 
         #endregion
 
-        private Button button1;
+        private Button n1;
         private TextBox textBox1;
-        private Button button2;
-        private Button button3;
+        private Button n2;
+        private Button n3;
     }
 }
